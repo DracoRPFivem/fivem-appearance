@@ -9,11 +9,11 @@ Config.SurgeonCost = 10000
 
 Config.UseTarget = GetConvar("UseTarget", "false") == "true"
 
-Config.EnablePedsForShops = true
-Config.EnablePedsForClothingRooms = true
-Config.EnablePedsForPlayerOutfitRooms = true
+Config.EnablePedsForShops = false
+Config.EnablePedsForClothingRooms = false
+Config.EnablePedsForPlayerOutfitRooms = false
 
-Config.EnablePedMenu = true
+Config.EnablePedMenu = false
 Config.PedMenuGroup = "admin"
 
 Config.AlwaysKeepProps = false

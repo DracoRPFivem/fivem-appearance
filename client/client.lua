@@ -160,6 +160,7 @@ RegisterNetEvent('qb-clothes:client:CreateFirstCharacter', function()
         ClearPedDecorations(ped)
         QBCore.Functions.TriggerCallback("QBCore:HasPermission", function(permission)
             local config = getConfigForPermission(permission)
+            config.tattoos = false
             exports['fivem-appearance']:startPlayerCustomization(function(appearance)
                 if (appearance) then
                     TriggerServerEvent('fivem-appearance:server:saveAppearance', appearance)
