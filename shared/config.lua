@@ -132,7 +132,7 @@ Config.Stores = {
 
 Config.ClothingRooms = {
     {requiredJob = "police", isGang = false, coords = vector4(462.85, -999.21, 30.69, 93.35), width = 3, length = 3},
-    {requiredJob = "police", isGang = false, coords = vector4(301.58, -598.82, 43.29, 79.61), width = 3, length = 3}, -- Right double door in Hospital Map that is on QBCore GitHub
+    {requiredJob = "ambulance", isGang = false, coords = vector4(299.18, -598.11, 43.28, 72.74), width = 3, length = 3}, -- Right double door in Hospital Map that is on QBCore GitHub
     {requiredJob = "police", isGang = false, coords = vector4(1840.78, 3679.56, 34.19, 66.64), width = 3, length = 3}, --Sandy
     {requiredJob = "mechanic", isGang = false, coords = vector4(840.97, -824.47, 26.33, 274.94), width = 3, length = 3}, --Mechanic
     --{requiredJob = "ambulance", isGang = false, coords = vector3(-1098.45, 1751.71, 23.35), width = 3, length = 3}, --blank   
@@ -351,11 +351,12 @@ Config.Outfits = {
                     ["arms"]        = { item = 1, texture = 0},  -- Arms
                     ["t-shirt"]     = { item = 31, texture = 0},  -- T Shirt
                     ["vest"]        = { item = 0, texture = 0},  -- Body Vest
+                    ['decals']      = { item = 0, texture = 0},
                     ["torso2"]      = { item = 294, texture = 0},  -- Jacket
                     ["shoes"]       = { item = 10, texture = 0},  -- Shoes
                     ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 12, texture = -1},  -- Hat
+                    ['hat']         = {item = -1, texture = -1}, -- Hat
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                 },
@@ -370,6 +371,7 @@ Config.Outfits = {
                     ["arms"]        = { item = 0, texture = 0},  -- Arms
                     ["t-shirt"]     = { item = 34, texture = 0},  -- T Shirt
                     ["vest"]        = { item = 0, texture = 0},  -- Body Vest
+                    ['decals']      = { item = 0, texture = 0},
                     ["torso2"]      = { item = 105, texture = 7},  -- Jacket
                     ["shoes"]       = { item = 8, texture = 5},  -- Shoes
                     ["accessory"]   = { item = 11, texture = 3},  -- Neck Accessory
@@ -392,6 +394,7 @@ Config.Outfits = {
                     ["arms"]        = { item = 26, texture = 0},  -- Arms
                     ["t-shirt"]     = { item = 15, texture = 0},  -- T Shirt
                     ["vest"]        = { item = 0, texture = 0},  -- Body Vest
+                    ['decals']      = { item = 0, texture = 0},
                     ["torso2"]      = { item = 95, texture = 1},  -- Jacket
                     ["shoes"]       = { item = 12, texture = 6},  -- Shoes
                     ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
@@ -411,6 +414,7 @@ Config.Outfits = {
                     ["arms"]        = { item = 26, texture = 0},  -- Arms
                     ["t-shirt"]     = { item = 14, texture = 0},  -- T Shirt
                     ["vest"]        = { item = 0, texture = 0},  -- Body Vest
+                    ['decals']      = { item = 0, texture = 0},
                     ["torso2"]      = { item = 262, texture = 13},  -- Jacket
                     ["shoes"]       = { item = 25, texture = 0},  -- Shoes
                     ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
@@ -433,11 +437,12 @@ Config.Outfits = {
                     ["arms"]        = { item = 1, texture = 0},  -- Arms
                     ["t-shirt"]     = { item = 31, texture = 0},  -- T Shirt
                     ["vest"]        = { item = 0, texture = 0},  -- Body Vest
+                    ['decals']      = { item = 0, texture = 0},
                     ["torso2"]      = { item = 294, texture = 0},  -- Jacket
                     ["shoes"]       = { item = 10, texture = 0},  -- Shoes
                     ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 12, texture = -1},  -- Hat
+                    ['hat']         = {item = -1, texture = -1}, -- Hat
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                 },
@@ -452,11 +457,12 @@ Config.Outfits = {
                     ["arms"]        = { item = 5, texture = 0},  -- Arms
                     ["t-shirt"]     = { item = 64, texture = 0},  -- T Shirt
                     ["vest"]        = { item = 0, texture = 0},  -- Body Vest
+                    ['decals']      = { item = 0, texture = 0},
                     ["torso2"]      = { item = 58, texture = 0},  -- Jacket
                     ["shoes"]       = { item = 77, texture = 0},  -- Shoes
                     ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 0, texture = 0},  -- Hat
+                    ['hat']         = {item = -1, texture = -1}, -- Hat
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                 },
@@ -469,6 +475,7 @@ Config.Outfits = {
                     ['arms'] = {item = 6, texture = 0}, -- Arms
                     ['t-shirt'] = {item = 3, texture = 0}, -- T Shirt
                     ['vest'] = {item = 0, texture = 0}, -- Body Vest
+                    ['decals'] = { item = 0, texture = 0},
                     ['torso2'] = {item = 7, texture = 0}, -- Jacket
                     ['shoes'] = {item = 0, texture = 0}, -- Shoes
                     ['accessory'] = {item = 0, texture = 0}, -- Neck Accessory
