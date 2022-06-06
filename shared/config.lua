@@ -507,7 +507,7 @@ Config.Outfits = {
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["ear"] = {item = 0, texture = 0} -- Ear accessories
                 },
-                grades = {0, 1, 2, 3, 4},
+                grades = {0, 1, 2, 3, 4, 5},
             },
             {
                 outfitLabel = "Polo",
@@ -526,7 +526,7 @@ Config.Outfits = {
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["ear"] = {item = 0, texture = 0} -- Ear accessories
                 },
-                grades = {2, 3, 4},
+                grades = {2, 3, 4, 5},
             },
             {
                 outfitLabel = "Doctor",
@@ -545,7 +545,7 @@ Config.Outfits = {
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["ear"] = {item = 0, texture = 0} -- Ear accessories
                 },
-                grades = {3, 4},
+                grades = {3, 4, 5},
             }
         },
         ["female"] = {
@@ -566,7 +566,7 @@ Config.Outfits = {
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["ear"] = {item = 0, texture = 0} -- Ear accessories
                 },
-                grades = {0, 1, 2, 3, 4},
+                grades = {0, 1, 2, 3, 4, 5},
             },
             {
                 outfitLabel = "Polo",
@@ -585,7 +585,7 @@ Config.Outfits = {
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["ear"] = {item = 0, texture = 0} -- Ear accessories
                 },
-                grades = {2, 3, 4},
+                grades = {2, 3, 4, 5},
             },
             {
                 outfitLabel = "Doctor",
@@ -604,7 +604,7 @@ Config.Outfits = {
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["ear"] = {item = 0, texture = 0} -- Ear accessories
                 },
-                grades = {3, 4},
+                grades = {3, 4, 5},
             }
         }
     }
