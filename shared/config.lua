@@ -493,7 +493,7 @@ Config.Outfits = {
             {
                 outfitLabel = "T-Shirt",
                 outfitData = {
-                    ["arms"] = {item = 85, texture = 0}, -- Arms
+                    ["arms"] = {item = 110, texture = 0}, -- Arms
                     ["t-shirt"] = {item = 129, texture = 0}, -- T-Shirt
                     ["torso2"] = {item = 250, texture = 0}, -- Jackets
                     ["vest"] = {item = 0, texture = 0}, -- Vest
