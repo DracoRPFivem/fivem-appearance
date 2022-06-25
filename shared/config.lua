@@ -131,14 +131,14 @@ Config.Stores = {
 }
 
 Config.ClothingRooms = {
-    {requiredJob = "police", isGang = false, coords = vector4(462.85, -999.21, 30.69, 93.35), width = 3, length = 3},
-    {requiredJob = "ambulance", isGang = false, coords = vector4(299.18, -598.11, 43.28, 72.74), width = 3, length = 3}, -- Right double door in Hospital Map that is on QBCore GitHub
-    {requiredJob = "police", isGang = false, coords = vector4(1840.78, 3679.56, 34.19, 66.64), width = 3, length = 3}, --Sandy
-    {requiredJob = "mechanic", isGang = false, coords = vector4(840.97, -824.47, 26.33, 274.94), width = 3, length = 3}, --Mechanic
-    --{requiredJob = "ambulance", isGang = false, coords = vector3(-1098.45, 1751.71, 23.35), width = 3, length = 3}, --blank   
-    {requiredJob = "police", isGang = false, coords = vector4(-438.04, 6009.23, 36.99, 251.6), width = 3, length = 3}, --Paleto    
-    {requiredJob = "rea", isGang = false, coords = vector4(-131.46, -634.75, 168.82, 251.6), width = 3, length = 3}, -- Business Center
-    {requiredJob = "vanilla", isGang = false, coords = vector4(105.61, -1303.01, 28.79, 251.6), width = 3, length = 3},
+    {job = "police", coords = vector4(462.85, -999.21, 30.69, 93.35), width = 3, length = 3},
+    {job = "ambulance", coords = vector4(299.18, -598.11, 43.28, 72.74), width = 3, length = 3},
+    {job = "police", coords = vector4(1840.78, 3679.56, 34.19, 66.64), width = 3, length = 3},
+    {job = "mechanic", coords = vector4(840.97, -824.47, 26.33, 274.94), width = 3, length = 3},
+    --{job = "ambulance", coords = vector4(462.85, -999.21, 30.69, 93.35), width = 3, length = 3},--blank
+    {job = "police", coords = vector4(-438.04, 6009.23, 36.99, 251.6), width = 3, length = 3}, --Paleto
+    {job = "rea", coords = vector4(-131.46, -634.75, 168.82, 251.6), width = 3, length = 3}, -- Business Center
+    {job = "vanilla", coords = vector4(105.61, -1303.01, 28.79, 251.6), width = 3, length = 3},
 }
 
 Config.PlayerOutfitRooms = {
