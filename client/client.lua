@@ -71,6 +71,12 @@ local function LoadPlayerUniform()
     end)
 end
 
+local function ResetRechargeMultipliers()
+    local player = PlayerId()
+    SetPlayerHealthRechargeMultiplier(player, 0.0)
+    SetPlayerHealthRechargeLimit(player, 0.0)
+end
+
 local function InitAppearance()
     PlayerData = QBCore.Functions.GetPlayerData()
     PlayerJob = PlayerData.job
@@ -87,6 +93,7 @@ local function InitAppearance()
         if Config.PersistUniforms then
             LoadPlayerUniform()
         end
+        ResetRechargeMultipliers()
 
         if Config.Debug then -- This will detect if the player model is set as "player_zero" aka michael. Will then set the character as a freemode ped based on gender.
             Wait(5000)
@@ -170,6 +177,7 @@ RegisterNetEvent('qb-clothes:client:CreateFirstCharacter', function()
             exports['fivem-appearance']:startPlayerCustomization(function(appearance)
                 if (appearance) then
                     TriggerServerEvent('fivem-appearance:server:saveAppearance', appearance)
+                    ResetRechargeMultipliers()
                 end
             end, config)
         end, Config.PedMenuGroup)
@@ -445,6 +453,7 @@ RegisterNetEvent("fivem-appearance:client:changeOutfit", function(data)
             if appearance then
                 exports['fivem-appearance']:setPlayerAppearance(appearance)
                 appearanceDB = appearance
+                ResetRechargeMultipliers()
             else
                 QBCore.Functions.Notify(
                     "Something went wrong. The outfit that you're trying to change to, does not have a base appearance.",
@@ -518,9 +527,7 @@ RegisterNetEvent('fivem-appearance:client:reloadSkin', function()
         SetPedMaxHealth(playerPed, maxhealth)
         Citizen.Wait(1000) -- Safety Delay
         SetEntityHealth(playerPed, health)
-        local player = PlayerId()
-        SetPlayerHealthRechargeMultiplier(player, 0.0)
-        SetPlayerHealthRechargeLimit(player, 0.0)
+        ResetRechargeMultipliers()
     end)
 end)
 
@@ -764,8 +771,9 @@ local function SetupClothingRoomTargets()
             TargetPeds.ClothingRoom[k] = CreatePedAtCoords(targetConfig.model, v.coords, targetConfig.scenario)
             exports['qb-target']:AddTargetEntity(TargetPeds.ClothingRoom[k], parameters)
         else
-            exports['qb-target']:AddBoxZone('clothing_' .. v.job or v.gang .. k, v.coords, v.length, v.width, {
-                name = 'clothing_' .. v.job or v.gang .. k,
+            local key = 'clothing_' .. (v.job or v.gang) .. k
+            exports['qb-target']:AddBoxZone(key, v.coords, v.length, v.width, {
+                name = key,
                 debugPoly = Config.Debug,
                 minZ = v.coords.z - 2,
                 maxZ = v.coords.z + 2
@@ -793,7 +801,7 @@ local function SetupPlayerOutfitRoomTargets()
             distance = targetConfig.distance
         }
 
-        if Config.EnablePedsForClothingRooms then
+        if Config.EnablePedsForPlayerOutfitRooms then
             TargetPeds.PlayerOutfitRoom[k] = CreatePedAtCoords(targetConfig.model, v.coords, targetConfig.scenario)
             exports['qb-target']:AddTargetEntity(TargetPeds.ClothingRoom[k], parameters)
         else
