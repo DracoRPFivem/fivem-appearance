@@ -8,7 +8,7 @@ Config.TattooCost = 100
 Config.SurgeonCost = 10000
 
 Config.UseTarget = GetConvar("UseTarget", "false") == "true"
-Config.UseRadialMenu = true
+Config.UseRadialMenu = false
 
 Config.EnablePedsForShops = false
 Config.EnablePedsForClothingRooms = false
