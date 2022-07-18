@@ -33,7 +33,7 @@ Config.PersistUniforms = false -- Keeps Job / Gang Outfits on player reconnects 
 
 Config.OnDutyOnlyClothingRooms = true -- Set to `true` to make the clothing rooms accessible only to players who are On Duty
 
-Config.BossManagedOutfits = false -- Allows Job / Gang bosses to manage their own job / gang outfits
+Config.BossManagedOutfits = true -- Allows Job / Gang bosses to manage their own job / gang outfits
 
 Config.ReloadSkinCooldown = 5000
 
