@@ -7,7 +7,7 @@ Config.BarberCost = 100
 Config.TattooCost = 100
 Config.SurgeonCost = 10000
 
-Config.UseTarget = GetConvar("UseTarget", "false") == "true"
+Config.UseTarget = false
 Config.UseRadialMenu = false
 
 Config.EnablePedsForShops = false
@@ -617,7 +617,7 @@ Config.ClothingRooms = {
     --{job = "ambulance", coords = vector4(462.85, -999.21, 30.69, 93.35), width = 3, length = 3},--blank
     {job = "police", coords = vector4(-438.04, 6009.23, 36.99, 251.6), width = 3, length = 3}, --Paleto
     {job = "rea", coords = vector4(-131.46, -634.75, 168.82, 251.6), width = 3, length = 3}, -- Business Center
-    {job = "vanilla", coords = vector4(105.61, -1303.01, 28.79, 251.6), width = 3, length = 3},
+    {job = "vanilla", coords = vector4(105.64, -1302.96, 28.79, 122.52), width = 3, length = 3},
 }
 
 Config.PlayerOutfitRooms = {
